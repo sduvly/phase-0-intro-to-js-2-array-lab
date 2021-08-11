@@ -1,37 +1,69 @@
-// Write your solution here!
+// // Write your solution here!
+// const cats = ["Milo", "Otis", "Garfield"];
+// function destructivelyAppendCat(name){
+//     cats.push(name)
+// }
+
+// function destructivelyPrependCat(name){
+//     cats.unshift(name)
+// }
+
+// function destructivelyRemoveLastCat(){
+//     cats.pop()
+// }
+
+// function destructivelyRemoveFirstCat(){
+//     cats.shift()
+// }
+
+// function appendCat(name){
+//     const newCat = [...cats, name]
+//     return newCat
+// }
+
+// function prependCat(name){
+//     const litCat = [name, ...cats]
+//     return litCat
+// }
+
+// function removeLastCat(){
+//     const myCat = cats.slice(0, cats.length - 1)
+//     return myCat
+// }
+
+// function removeFirstCat(){
+// const oldCat = cats.slice(1)
+// return oldCat
+// }
+
+
 const cats = ["Milo", "Otis", "Garfield"];
 function destructivelyAppendCat(name){
-    cats.push(name)
+    cats.push("Ralph");
 }
-
 function destructivelyPrependCat(name){
-    cats.unshift(name)
+    cats.unshift("Bob");
 }
 
 function destructivelyRemoveLastCat(){
     cats.pop()
 }
-
 function destructivelyRemoveFirstCat(){
     cats.shift()
 }
-
 function appendCat(name){
-    const newCat = [...cats, name]
-    return newCat
+    const newAr = [...cats, name];
+    return newAr;
 }
-
 function prependCat(name){
-    const litCat = [name, ...cats]
-    return litCat
+    const array = [name, ...cats]
+    return array;
 }
-
 function removeLastCat(){
-    const myCat = cats.slice(0, cats.length - 1)
-    return myCat
+const myArr = cats.slice(0, - 1)
+return myArr;
 }
-
 function removeFirstCat(){
-const oldCat = cats.slice(1)
-return oldCat
+    const myCat = cats.slice(1);
+    return myCat;
 }
